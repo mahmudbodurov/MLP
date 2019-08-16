@@ -77,7 +77,7 @@ public class Network implements Serializable, Cloneable {
                 }
 
                 new_value += layers[i].neurons[j].Bias;
-                layers[i].neurons[j].output = new_value;//activationFunction.evulate(new_value);
+                layers[i].neurons[j].output = activationFunction.evulate(new_value);// new_value;
             }
         }
         //for output
